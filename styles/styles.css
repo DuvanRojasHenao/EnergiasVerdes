@@ -1,5 +1,5 @@
 .main_container {
-    max-width: 1000px;
+    max-width: 800px;
     margin: auto;
     background-color: #d5d5d5;
     padding: 10px;
@@ -9,7 +9,7 @@
 }
 
 .carrusel_imagenes {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 50px auto;
     background-color: #545151
 }
@@ -27,10 +27,10 @@
 }
 
 .footer {
-    width: 100%
+    width: 100%;
     margin: auto;
     background-color: #33ff61;
-    padding: 20px 15px;
+    padding: 20px;
 }
 
 .footer h2{
@@ -52,13 +52,9 @@
    padding: 0;
 }
 
-<<<<<<< Updated upstream
-/* animacion */
-=======
-.footer .lista p{
-   color: #ffffff;
-   text-align: center;
+.footer p {
 
+    color:#ffffff;
 }
 
 .main_container{
@@ -68,9 +64,41 @@
     padding: 25px;
 }
 
-.tituloprincipal{
-    justify-content: center;
-    
-
+.box_text {
+    color:#d5d5d5;
+    width: 100%;
+    height: auto;
 }
->>>>>>> Stashed changes
+h1 {
+    text-align: left;
+}
+
+.clearfix  {
+    color:white;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: left;
+}
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    }
+    
+    .video-responsive iframe,
+    .video-responsive object,
+    .video-responsive embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+.contenedor_imagenes img{
+
+    width: 100%;
+        
+}
