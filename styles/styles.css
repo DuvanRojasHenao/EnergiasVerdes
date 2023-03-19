@@ -1,44 +1,76 @@
-.container {
+.main_container {
     max-width: 1000px;
     margin: auto;
     background-color: #d5d5d5;
     padding: 10px;
 }
+.menu_sitio img {
+    width: 50px
+}
 
-.box_text {
-    color: blue;
-    background-color: rgb(221, 255, 127);
-    width: 50%;
+.carrusel_imagenes {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #545151
+}
+
+.carrusel_imagenes img {
+    margin: auto;
+    height: 350px;
+    
+}
+
+.carrusel_imagenes .descripcion {
+    
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    width: 100%
+    margin: auto;
+    background-color: #33ff61;
+    padding: 20px 15px;
+}
+
+.footer h2{
+    color: #ffffff;
+    text-align:center;
+}
+
+.footer .links_redes {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+.footer .links_redes img {
+    width: 45px;
     height: auto;
 }
+.footer .lista {
+   list-style: none; 
+   padding: 0;
+}
 
+<<<<<<< Updated upstream
 /* animacion */
+=======
+.footer .lista p{
+   color: #ffffff;
+   text-align: center;
 
-.stage {
-    border-bottom: 3px solid #444;
-    display: flex;
-    height: 330px;
-    width: 100%;
-}
-.box {
-    align-self: flex-end;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    background-color: #F44336;
-    height: 200px;
-    margin: 0 auto 0 auto;
-    transform-origin: bottom;
-    width: 200px;
-    border-radius: 50%;
-}
-.bounce-2 {
-    animation-name: bounce-2;
-    animation-timing-function: ease;
-}
-@keyframes bounce-2 {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-100px); }
-    100% { transform: translateY(0); }
 }
 
-/* animacion */
+.main_container{
+
+    color: #d5d5d5;
+    align-content: center;
+    padding: 25px;
+}
+
+.tituloprincipal{
+    justify-content: center;
+    
+
+}
+>>>>>>> Stashed changes
