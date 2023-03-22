@@ -28,13 +28,10 @@
                 <a class="nav-link" href="./PlasticosBiodegradables.html">Plasticos Biodegradables</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./Hidrolisis.html">Hidrolisis</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="./HidrogenoVerde.html">Hidrogeno Verde</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contactenos</a>                
+                <a class="nav-link" href="./Formulario.html">Contactenos</a>                
               </li>
             </ul> 
           </div>
@@ -42,7 +39,53 @@
       </nav>
       
 	<section class="main_container carrusel_imagenes">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit officiis excepturi ad, quaerat libero nemo accusantium temporibus voluptatibus eaque aspernatur eveniet similique veritatis impedit vel error repellat repellendus laudantium quod.</p>
+    <p> <div class="ctn-lbl-comentar"><label class="lbl-comentarios"><h1>Escribir comentario</h1></label></div>
+    </div>
+    <div class="container text-center">
+  <div class="mb-3">
+    <label for="Nombre" class="form-label"><h3>Nombre</h3></label>
+    <input type="email" class="form-control" id="nombre" >
+  </div>
+  <div class="mb-3">
+    <label for="escribe tu comentario" class="form-label"><h3>Dejanos tu comentario</h3></label>
+    <textarea class="form-control" id="comentario" rows="3"></textarea>
+  </div>
+  
+      
+    <div class="rating">
+      <label class="label"><h5> Tu valoración:</label></h5><span class="texto" id="texto-valoracion">
+        <span class="texto" id="texto-valoracion"></span>
+        <br>
+      <div class="form-check form-check-inline">
+      <input type="radio" name="rating" id="valoracion-1" class="valoracion" value="1" onclick="$  data-texto="No es útil"><label for="valoracion-1"></label><br> Es útil</div>
+      <div class="form-check form-check-inline">
+      <input type="radio" name="rating" id="valoracion-2" class="valoracion" value="2" onclick="$('#texto-valoracion').html($(this).data('texto'));" data-texto="Más o menos"><br> Más o menos<label for="valoracion-2"></label>
+      </div>
+      <div class="form-check form-check-inline">
+      <input type="radio" name="rating" id="valoracion-3" class="valoracion" value="3" onclick="$('#texto-valoracion').html($(this).data('texto'));" data-texto="Normal"><br> Normal<label for="valoracion-3"></label>
+      </div>
+      <div class="form-check form-check-inline">
+      <input type="radio" name="rating" id="valoracion-4" class="valoracion" value="4" onclick="$('#texto-valoracion').html($(this).data('texto'));" data-texto="Útil"><br> Útil<label for="valoracion-4"></label></div>
+      <div class="form-check form-check-inline">
+      <input type="radio" name="rating" id="valoracion-5" class="valoracion" value="5" onclick="$('#texto-valoracion').html($(this).data('texto'));" data-texto="Muy útil"><br>  Muy Útil <label for="valoracion-5"></label></div>
+      
+        </div>
+        <hr>
+      </div>
+      </div>
+      </div>
+      <div class="container text-center">
+          <div class="col-auto">
+            <div class="d-grid gap-2 col-6 mx-auto">
+            <input class="btn btn-primary btn-lg" type="submit" value="Enviar comentario">
+          </div>
+          </div>
+      </div>
+  <br>
+  </div>
+  
+  </div>
+    <div class="ctn-lbl-comentar"><label class="lbl-comentarios"><h2>Comentarios</h2></label></div></p>
 	</section>
 
   <footer class="footer">  
@@ -79,7 +122,7 @@
       <ul class="lista">
         <li class="correo">
           <p>duvanrojas1012@gmail.com</p>
-          <p>duvanrojas1012@gmail.com</p>
+          <p>Yuliwww12@gmail.com</p>
         </li>
         <li class="tel">
           <p>Celular: 3157189017</p>
