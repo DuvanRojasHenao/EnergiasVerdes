@@ -100,6 +100,7 @@ h1 {
 .contenedor_imagenes img{
 
     width: 100%;
+    height: auto;
         
 }
 .ctn-lbl-comentar{
