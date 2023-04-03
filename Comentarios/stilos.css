@@ -1,0 +1,151 @@
+.box_text {
+    color: rgb(8, 8, 8);
+    background-color: rgb(95, 121, 25);
+    width: 100%;
+    height: auto;
+}
+h1 {
+    text-align: center;
+  }
+
+.clearfix  {
+    color: rgb(8, 8, 8);
+    background-color: rgb(218, 241, 7);
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+
+}
+.row{
+
+     color: rgb(8, 8, 8);
+    /*background-color: rgb(218, 241, 7);*/
+    width: 100%;
+    height: auto;
+    }
+.col-4{
+    color: rgb(8, 8, 8);
+    background-color: rgb(249, 250, 243);
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin: 10px; 
+}
+.ctn-lbl-comentar{
+    width: 100%;
+text-align: center;
+}
+.lbl-comentarios{
+    font-family: cursive;
+    font-size: 20px;
+    text-shadow: 1px 2px 1px rgb(32, 156, 7);
+   
+}
+input[type="radio"] {
+    -ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Chrome, Safari, Opera */
+    transform: scale(2);
+    text-align: center;
+}
+.rating{
+    text-align: center;
+}
+
+
+div.list-group-item {
+    height:auto;
+    min-height:120px;
+}
+div.list-group-item.active {
+    color: #020101;
+    background-color: #e4eee5;;
+    border-color: #020101;
+}
+.stars {
+    margin:20px auto 1px;
+}
+
+
+
+.rating {
+    display: flex;
+    margin-top: -10px;
+    flex-direction: row-reverse;
+    margin-left: -4px;
+    float: left;
+    gap: 10px;
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 19px;
+    font-size: 25px;
+    color: #154b28;
+    cursor: pointer;
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+.form-label {
+    width: 100%;
+    text-align: left;
+}
+
+.container_form, .container_comentarios {
+    max-width: 50%;
+}
+
+.container_form input[type="text"],
+.container_form input[type="email"]{
+    height: 45px;
+}
+
+.contenedor_estrellas {
+    display: flex;
+    width: 100%;
+}
+
+.container_form .linea {
+    border-top: 3px solid grey;
+    margin-top: 50px;
+}
+
+.container_comentarios .title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.comentario {
+    box-shadow: -4px 7px 21px -8px rgba(123,171,152,1);
+}
+.container_comentarios .list-group {
+    padding: 0;
+}
+.container_comentarios .list-group-item {
+    border-color: #37a72f!important;
+}
+.container_comentarios .glyphicon {
+    font-size: 18px;
+}
+
