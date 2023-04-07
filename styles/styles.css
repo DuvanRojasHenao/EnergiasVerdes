@@ -10,20 +10,28 @@
 
 .carrusel_imagenes {
     max-width: 800px;
-    margin: 50px auto;
-    background-color: #545151
+    margin: 3px auto;
+    background-color: #868484
 }
+h1{
+   color: #33ff61; 
+} 
+    
+
 
 .carrusel_imagenes img {
+
     margin: auto;
     height: 350px;
-    
+    border-radius: 15%;
+        
 }
 
 .carrusel_imagenes .descripcion {
     
     padding: 20px;
     text-align: center;
+
 }
 
 .footer {
@@ -118,3 +126,17 @@ input[type="radio"] {
     -webkit-transform: scale(2); /* Chrome, Safari, Opera */
     transform: scale(2);
 }
+
+.banner_container{
+    
+    text-align: center;
+    overflow: auto;
+       
+   
+}
+
+.banner_container img{
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
