@@ -8,13 +8,14 @@ h1 {
     text-align: center;
   }
 
-.clearfix  {
+//*.clearfix  {
     color: rgb(8, 8, 8);
     background-color: rgb(218, 241, 7);
     width: 100%;
     height: auto;
     padding: 20px;
-    text-align: center;
+    text-align: center;**/
+
 }
 .row{
 
@@ -22,7 +23,6 @@ h1 {
     /*background-color: rgb(218, 241, 7);*/
     width: 100%;
     height: auto;
-    text-align: center;
     }
 .col-4{
     color: rgb(8, 8, 8);
@@ -39,8 +39,7 @@ text-align: center;
 .lbl-comentarios{
     font-family: cursive;
     font-size: 20px;
-    text-shadow: 1px 2px 1px rgb(13, 14, 13);
-    text-align: center;
+    text-shadow: 1px 2px 1px rgb(32, 156, 7);
    
 }
 input[type="radio"] {
@@ -62,7 +61,6 @@ div.list-group-item.active {
     color: #020101;
     background-color: #e4eee5;;
     border-color: #020101;
-    
 }
 .stars {
     margin:20px auto 1px;
@@ -115,7 +113,7 @@ div.list-group-item.active {
 }
 
 .container_form, .container_comentarios {
-    max-width: 80%;
+    max-width: 50%;
 }
 
 .container_form input[type="text"],
@@ -131,13 +129,11 @@ div.list-group-item.active {
 .container_form .linea {
     border-top: 3px solid grey;
     margin-top: 50px;
-    
 }
 
 .container_comentarios .title {
     margin-bottom: 30px;
     text-align: center;
-    
 }
 
 .comentario {
@@ -152,4 +148,5 @@ div.list-group-item.active {
 .container_comentarios .glyphicon {
     font-size: 18px;
 }
+
 
