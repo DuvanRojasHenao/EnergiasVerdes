@@ -4,7 +4,7 @@
 
     $p= new comentario();
    
-    $dp =$p->get0ne($_GET['id']);
+    $dp = $p->get0ne($_GET['id']);
 
     $data =  mysqli_fetch_assoc($dp);
 
@@ -12,8 +12,7 @@
         $update = $p->update($_POST);
         if ($update) {
             $mensaje='<div class="alert alert-success"role="alert">Comentario modificado con exito</div>';
-            header("Location: ". ROOT ."formulario/add.php");
-            exit();
+            
         } else {
             $mensaje='<div class"alert alert_danger"role="alert">Error!</div>';
         }
@@ -31,13 +30,20 @@
         include('../menu.php');
     ?>
 
-    <?php 
-          if (isset($mensaje)){
+    <form method="POST" enctype="multipart/form-data" class="row g-3">
+          <?php 
+          if (isset($mensaje)) {
+            
             echo $mensaje;
+
+            echo '<script>';
+            echo '    window.setTimeout(function() {';
+            echo '        window.location.href ="index.php?";';
+            echo '    }, 1500);';
+            echo '</script>';
+
           }
     ?>
-
-    <form method="POST" enctype="multipart/form-data" class="row g-3">
         <div class="text-center" class="lbl-comentarios"><h1>Editar comentario</h1></label></div>
         <div class="container text-center container_form">
             <input type="hidden" value="<?= $data['id'] ?>" name="id">
@@ -59,13 +65,15 @@
                 <label for="" class="form-label"><h3>Calificanos</h3></label>
             </div>
             <div class="mb-3 contenedor_estrellas">
+                <input type="hidden" id="tu_valoracion" value="<?php echo $data['tuvaloracion']; ?>">
+                
                 <div class="rating">
-                    <input type="radio" name="tuvaloracion" value="5" id="5"><label for="5">☆</label>
-                    <input type="radio" name="tuvaloracion" value="4" id="4"><label for="4">☆</label>
-                    <input type="radio" name="tuvaloracion" value="3" id="3"><label for="3">☆</label>
-                    <input type="radio" name="tuvaloracion" value="2" id="2"><label for="2">☆</label>
-                    <input type="radio" name="tuvaloracion" value="1" id="1"><label for="1">☆</label>
-                </div>
+                        <input type="radio" name="tuvaloracion" value="5" id="5"><label for="5">☆</label>
+                        <input type="radio" name="tuvaloracion" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="tuvaloracion" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="tuvaloracion" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="tuvaloracion" value="1" id="1"><label for="1">☆</label>
+                    </div>
             </div>
 
             <div class="mb-3">
@@ -77,7 +85,13 @@
         </div>
 
     </form>
+
     
 </body>
+
+<script type="text/javascript">
+    var id = document.getElementById("tu_valoracion").value;
+    document.getElementById(id).checked = true;
+</script>
 
 </html>

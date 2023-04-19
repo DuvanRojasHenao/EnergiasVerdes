@@ -16,7 +16,7 @@ $data = $p->getAll();
     <?php
 
     include('../menu.php');
-    
+
     ?>
 
     <div class="container" >
@@ -65,7 +65,7 @@ $data = $p->getAll();
     </div>
     
 </body>
-<script >
+<script>
     function myFunction(id) {
 
         if(confirm("Desea eliminar este comentario?")) {
@@ -80,15 +80,16 @@ $data = $p->getAll();
         }
     }
 </script>
+
 <style>
-    a.list-group-item {
+    a.list-group-item{
         height:auto;
         min-height:220px;
     }
-    a.list-group-item.active small {
+    a.list-group-item.active small{
         color:#fff;
     }
-    .stars {
+    .stars{
         margin:20px auto 1px;
     }
 </style>

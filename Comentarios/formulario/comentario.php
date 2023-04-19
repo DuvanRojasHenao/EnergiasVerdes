@@ -35,17 +35,17 @@
           return mysqli_query($this->conexion,$sql);
 
         }
-        
+
         function update($params){
 
             $id = $params["id"];
             $nombre = $params["nombre"];
             $email = $params["email"];
             $comentario = $params["comentario"];
-            //$tuvaloracion = $params["tuvaloracion"];
+            $tuvaloracion = $params["tuvaloracion"];
             $update ="UPDATE comentarios 
-            SET nombre='$nombre', email='$email', comentario='$comentario'  
-            WHERE id=$id ";
+            SET nombre='$nombre', email='$email', comentario='$comentario', tuvaloracion='$tuvaloracion'  
+            WHERE id=$id";
         
             return mysqli_query($this->conexion,$update);
             
